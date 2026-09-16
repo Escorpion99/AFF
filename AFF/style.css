@@ -1,0 +1,283 @@
+html {
+    scroll-behavior: smooth;
+    /*Para que no haga scroll brusco*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.nav-custom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-custom-container .navbar-nav {
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+/* Cambio a vertical para 540px o menos */
+@media (min-width: 720px){
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .nav-custom-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .nav-custom-container .navbar-nav {
+        flex-direction: column;
+        gap: 0.25rem;
+        margin: 0.75rem 0;
+    }
+}
+
+/* Estilo */
+.navbar {
+    background: linear-gradient(to right, black 40%, rgb(90, 4, 90) 100%);
+}
+
+.navbar-brand h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-brand h1::first-letter {
+    color: rgb(90, 4, 90);
+    font-size: 40px;
+}
+
+.navbar .nav-link.active {
+    color: white;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn a:hover {
+    color: black;
+}
+
+/* FIN NAVBAR */
+
+/* SECCION INICIO*/
+.hero-section {
+    min-height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, black 40%, rgb(90, 4, 90) 100%);
+}
+
+.hero-title {
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.hero-name {
+    font-size: 4rem;
+    color: #5b63d3;
+    /* Color azul/morado resaltado */
+}
+
+.hero-subtitle {
+    max-width: 500px;
+    font-size: 1.5rem;
+    color: #94a3b8 !important;
+}
+
+.hero-text {
+    max-width: 500px;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Botones personalizados */
+.btn-purple {
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-purple:hover {
+    background-color: #4338ca;
+    color: #ffffff;
+}
+
+.btn-outline-custom {
+    border: 1px solid #334155;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.btn-outline-custom:hover {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+/* Foto de perfil circular con resplandor (Glow effect) */
+.profile-img-container {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    padding: 2px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 1) 0%, rgba(59, 130, 246, 0.3) 100%);
+    box-shadow: 0 0 35px rgba(99, 102, 241, 0.4);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Ajuste responsivo para pantallas pequeñas */
+@media (max-width: 991px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-title{
+        text-align: center;
+    }
+
+    .hero-name{
+        text-align: center;
+    }
+
+
+    .hero-subtitle, .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .d-flex.gap-3 {
+        justify-content: center;
+    }
+
+    .profile-img-container {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .profile-img-container{
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.5rem; 
+    }
+
+    .hero-name {
+        font-size: 2.8rem; 
+    }
+
+    .col-lg-7 {
+        text-align: center !important; 
+    }
+}
+/* FIN SECCION INICIO*/
+
+/* SECCION PROYECTOS */
+#proyectos {
+    min-height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, black 40%, rgb(90, 4, 90) 100%);
+}
+
+/* Tarjeta contenedora de proyectos */
+.project-card {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #374151;
+}
+
+/* Imagen dentro de la tarjeta */
+.project-img {
+    border-radius: 12px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Badges personalizados para las tecnologías */
+.tech-badge {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.bg-orange {
+    background-color: rgba(234, 88, 12, 0.2);
+    color: #f97316;
+    border: 1px solid rgba(234, 88, 12, 0.4);
+}
+
+.bg-blue {
+    background-color: rgba(37, 99, 235, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(37, 99, 235, 0.4);
+}
+
+.bg-yellow {
+    background-color: rgba(234, 179, 8, 0.2);
+    color: #facc15;
+    border: 1px solid rgba(234, 179, 8, 0.4);
+}
+
+/* Compensación de espacio para Navbar Fijo */
+@media (min-width: 720px) {
+    body {
+        padding-top: 80px;
+    }
+}
+
+/* Ajuste fino de tipografía para dispositivos muy pequeños (360px a 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-name {
+        font-size: 2.2rem;
+    }
+
+    .profile-img-container {
+        width: 200px;
+        height: 200px;
+    }
+}

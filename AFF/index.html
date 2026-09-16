@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer>
+        </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid nav-custom-container">
+            <a class="navbar-brand me-0" href="#">
+                <h1>JPT</h1>
+            </a>
+
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#inicio">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#proyectos">Proyectos</a>
+                </li>
+            </ul>
+
+            <div>
+                <a href="AFF/Hvida/index.html" class="btn btn-outline-light">
+                    <i class="bi bi-download me-2"></i>CV
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN NAVBAR-->
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <div class="col-lg-7 text-start">
+                    <h2 class="hero-title fw-bold m-0">Hola, soy</h2>
+                    <h1 class="hero-name fw-bold mb-3">Joshua Parra Tamayo</h1>
+                    <h3 class="hero-subtitle text-secondary mb-3">Desarrollador Front-End</h3>
+                    <p class="hero-text text-light-50 mb-4">
+                        Creo experiencias web modernas, rápidas y accesibles utilizando las mejores tecnologías del
+                        ecosistema front-end.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#proyectos" class="btn btn-purple px-4 py-2">
+                            Ver proyectos <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#contacto" class="btn btn-outline-custom px-4 py-2">
+                            Contactar <i class="bi bi-envelope ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="profile-img-container">
+                        <!-- Rutas corregidas a relativas -->
+                        <img src="img/Foto.jpeg" alt="Joshua Parra Tamayo" class="profile-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCION INICIO -->
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <div class="d-flex align-items-center gap-2 mb-4">
+                <i class="bi bi-folder2 fs-3 text-primary"></i>
+                <h2 class="text-white fw-bold m-0">Proyectos destacados</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Proyecto 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 p-3">
+                        <img src="img/proyecto1.jpg" class="card-img-top project-img" alt="WaylandCore">
+                        <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title text-white fw-bold mb-2">
+                                    <a href="AFF/Proyecto1/index.html" class="text-white text-decoration-none stretched-link">
+                                        WaylandCore
+                                    </a>
+                                </h5>
+                                <p class="card-text text-secondary fs-6">
+                                    Soluciones de software a la medida de tu empresa.
+                                </p>
+                            </div>
+
+                            <div class="d-flex gap-2 mt-3">
+                                <span class="badge tech-badge bg-orange">HTML</span>
+                                <span class="badge tech-badge bg-blue">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 p-3">
+                        <img src="img/proyecto2.jpg" class="card-img-top project-img" alt="TaskFlow">
+                        <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title text-white fw-bold mb-2">
+                                    <a href="AFF/Proyecto2/Actividad.html" class="text-white text-decoration-none stretched-link">
+                                        TaskFlow
+                                    </a>
+                                </h5>
+                                <p class="card-text text-secondary fs-6">
+                                    Aplicación del clima que consume una API para mostrar el pronóstico en tiempo real.
+                                </p>
+                            </div>
+                            
+                            <div class="d-flex gap-2 mt-3">
+                                <span class="badge tech-badge bg-orange">HTML</span>
+                                <span class="badge tech-badge bg-blue">CSS</span>
+                                <span class="badge tech-badge bg-yellow">BOOTSTRAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 p-3">
+                        <img src="img/proyecto3.jpg" class="card-img-top project-img" alt="Focus Landing">
+                        <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title text-white fw-bold mb-2">
+                                    <a href="https://tu-proyecto.com" target="_blank" class="text-white text-decoration-none stretched-link">
+                                        TaskFlow
+                                    </a>
+                                </h5>
+                                <p class="card-text text-secondary fs-6">
+                                    Landing page moderna y responsive para una aplicación SaaS.
+                                </p>
+                            </div>
+                            
+                            <div class="d-flex gap-2 mt-3">
+                                <span class="badge tech-badge bg-orange">HTML</span>
+                                <span class="badge tech-badge bg-blue">CSS</span>
+                                <span class="badge tech-badge bg-yellow">TAILWIND CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCION PROYECTOS -->
+</body>
+
+</html>
