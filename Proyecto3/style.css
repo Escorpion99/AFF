@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar-brand {
+    margin-left: 50px;
+    color: rgb(61, 35, 5);
+}
+
+.navbar-brand i {
+    color: rgb(61, 35, 5);
+}
+
+.collapse {
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.navbar-nav a {
+    margin-right: 30px;
+    color: rgb(61, 35, 5);
+    padding-bottom: 4px;
+}
+
+/* MAIN */
+/* CARD */
+
+.card {
+    margin-bottom: 2%;
+}
+
+.card-img-overlay {
+    width: 40%;
+    padding: 4%;
+}
+
+.card-img-overlay h4 {
+    font-size: 250%;
+}
+
+.card-img-overlay .btn {
+    background-color: rgba(247, 190, 105, 0.89);
+}
+
+/* FIN CARD */
+
+/* TARGETAS */
+.col-12 .card {
+    background-color: rgba(245, 224, 196, 0.918);
+}
+
+/* FIN TARGETA */
+
+/* FOOTER */
+footer {
+    background-color: rgba(247, 190, 105, 0.89);
+    margin-top: 4%;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+}
+
+.icon, .port {
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.icon a{
+    font-size: 150%;
+}
+
+.icon a i {
+    font-size: 200%;
+}
+
+.port h2 {
+    font-size: 120%;
+    margin-bottom: 0.8rem;
+}
+
+.port ul {
+    list-style: none;
+    padding-left: 0; 
+    margin: 0;
+}
+
+.port ul li {
+    margin-bottom: 0.5rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.redes li {
+    margin: 0;
+    font-size: 1.4rem;
+}
