@@ -133,7 +133,7 @@ footer {
     font-size: 1.4rem;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 546px) {
     .container-fluid {
         flex-direction: row !important;
         justify-content: space-between;
